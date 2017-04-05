@@ -21,14 +21,14 @@
               <p>
                 <strong>code:</strong>
                 <%= $connect.code %>
-                | <%= link_to 'обновить', "https://api.instagram.com/oauth/authorize/?client_id=#{$connect.client_id}&redirect_uri=http://localhost:3000/information_to_connects&scope=public_content+comments&response_type=code" %></td>
+                | <%= link_to 'обновить', "https://api.instagram.com/oauth/authorize/?client_id=#{$connect.client_id}&redirect_uri=http://digitalcomment.herokuapp.com/information_to_connects&scope=public_content+comments&response_type=code" %></td>
 
               </p>
           <% else %>
               <p>
                 <strong>code:</strong>
                 не был получен |
-                <%= link_to 'получить', "https://api.instagram.com/oauth/authorize/?client_id=#{$connect.client_id}&redirect_uri=http://localhost:3000/information_to_connects&scope=public_content+comments&response_type=code" %></td>
+                <%= link_to 'получить', "https://api.instagram.com/oauth/authorize/?client_id=#{$connect.client_id}&redirect_uri=http://digitalcomment.herokuapp.com/information_to_connects&scope=public_content+comments&response_type=code" %></td>
               </p>
           <% end %>
 
